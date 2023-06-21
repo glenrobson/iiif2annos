@@ -65,7 +65,7 @@ def mkannotations(canvas, ident, annotations):
         return {
             "@context": "http://iiif.io/api/presentation/3/context.json",
             "@id": ident,
-            "@type": "AnnotationList",
+            "@type": "sc:AnnotationList",
             "resources": annotations
         }    
 def addAnnotations(canvas, ident):
