@@ -65,7 +65,7 @@ def mkannotations(canvas, ident, annotations):
         return {
             "@context": "http://iiif.io/api/presentation/3/context.json",
             "@id": ident,
-            "@type": "AnnotationList",
+            "@type": "sc:AnnotationList",
             "resources": annotations
         }    
 
@@ -173,7 +173,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     processor = OCR(args.outputURI, args.lang, args.confidence)
-
 
     manifest = downloadManifest(args.manifest)
 

@@ -1,5 +1,5 @@
 # iiif2annos
-Read a manifest, OCR the images, create AnnotationLists, Add annotation lists to manifest
+Read a manifest, OCR the images, create AnnotationLists and add them to a copy of the manifest
 
 This tool uses the [tesseract](https://tesseract-ocr.github.io/) OCR engine. Ensure you have this installed and on your $PATH before running the code below. 
 
@@ -29,7 +29,7 @@ python iiif2annos/ocr.py --lang frk --base-output-uri http://localhost:5500/news
 ```
 
 
-Using this as a guide:
+Using these blogs as a guide:
 
-https://nanonets.com/blog/ocr-with-tesseract/#ocr-with-pytesseract-and-opencv 
-https://pypi.org/project/pytesseract/
+ * https://nanonets.com/blog/ocr-with-tesseract/#ocr-with-pytesseract-and-opencv 
+ * https://pypi.org/project/pytesseract/
