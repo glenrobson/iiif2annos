@@ -17,3 +17,6 @@ class TestImage(unittest.TestCase):
             edgar = annos[0]
             self.assertEqual(edgar["body"]["value"], "EDGAR")
             self.assertEqual(edgar["target"].split("#")[1], "xywh=1189,692,289,52")
+
+            for anno in annos:
+                self.assertNotEqual(len(anno["body"]["value"].strip()), 0, f"Found empty anno: \n{json.dumps(anno, indent=4)}")
