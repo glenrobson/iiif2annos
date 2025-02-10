@@ -135,14 +135,13 @@ def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False):
     return annos
 
 class OCR:
-    def __init__(self, base, outputDir, lang=None, confidence=False):
+    def __init__(self, base, lang=None, confidence=False):
         self.base = base # Set the base URI for annotations and Canvas Ids
         # Langauge of the source material
         self.lang = lang
 
         # Include confidence in output?     
         self.confidence = confidence    
-
 
     def ocr(self, manifest):
         anno_uri = self.base
