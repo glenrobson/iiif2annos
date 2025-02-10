@@ -33,3 +33,14 @@ Using these blogs as a guide:
 
  * https://nanonets.com/blog/ocr-with-tesseract/#ocr-with-pytesseract-and-opencv 
  * https://pypi.org/project/pytesseract/
+
+
+# Testing
+
+Unit tests are in the tests folder and can be run with:
+
+python -m unittest discover -s tests
+
+Run single test:
+
+python -m unittest tests.testImages.TestImage.testCanvasImageMissmatch

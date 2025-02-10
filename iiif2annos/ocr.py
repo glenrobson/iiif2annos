@@ -7,6 +7,7 @@ import pytesseract
 from pytesseract import Output
 import argparse
 import json
+import math
 
 def canvases(manifest, sequence=0):
     if 'type' in manifest:
@@ -104,6 +105,35 @@ def save(manifest, annoLists, outputDir):
 
         canvasNo += 1
 
+
+def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False):
+    print ('Running OCR')
+    if lang:
+        data = pytesseract.image_to_data(img, output_type=Output.DICT, lang=lang)
+    else:
+        data = pytesseract.image_to_data(img, output_type=Output.DICT)
+    annos = []
+    annoNo = 0
+    # Incase the downloaded image is a different size to the one in the canvas 
+    xRatio = canvas["width"] / img.width 
+    yRatio = canvas["height"] / img.height 
+    for i in range(len(data['text'])):
+        if data['conf'][i] >= 0:
+            (x, y, width, height) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
+            # Make values relative to the canvas:
+            (x, y, width, height) = (math.ceil(int(x)*xRatio), math.ceil(int(y)*yRatio), math.ceil(int(width)*xRatio), math.ceil(int(height)*yRatio))
+            ident = f"{anno_uri}/{canvasNo}/annotation/{annoNo}"
+            if confidence:
+                content = f"Confidence: {data['conf'][i]}: {data['text'][i]}"
+            else:    
+                content = f"{data['text'][i]}"
+
+            annos.append(buildAnno(canvas, ident, x, y, width, height, content))
+
+            annoNo += 1
+
+    return annos
+
 class OCR:
     def __init__(self, base, outputDir, lang=None, confidence=False):
         self.base = base # Set the base URI for annotations and Canvas Ids
@@ -126,25 +156,7 @@ class OCR:
             response = requests.get(url)
             img = Image.open(BytesIO(response.content))
 
-            print ('Running OCR')
-            if self.lang:
-                data = pytesseract.image_to_data(img, output_type=Output.DICT, lang=self.lang)
-            else:
-                data = pytesseract.image_to_data(img, output_type=Output.DICT)
-            annos = []
-            annoNo = 0
-            for i in range(len(data['text'])):
-                if data['conf'][i] >= 0:
-                    (x, y, width, height) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
-                    ident = f"{anno_uri}/{canvasNo}/annotation/{annoNo}"
-                    if self.confidence:
-                        content = f"Confidence: {data['conf'][i]}: {data['text'][i]}"
-                    else:    
-                        content = f"{data['text'][i]}"
-
-                    annos.append(buildAnno(canvas, ident, x, y, width, height, content))
-
-                    annoNo += 1
+            annos = run_ocr(img, canvas, anno_uri, canvasNo, lang=self.lang, confidence=self.confidence)
 
             annotationsID = f"{anno_uri}/{canvasNo}.json"
             annotations = mkannotations(canvas,annotationsID, annos)
@@ -155,10 +167,6 @@ class OCR:
             canvasNo += 1
 
         return (manifest, annoLists)    
-
-
-
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
