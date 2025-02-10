@@ -118,7 +118,7 @@ def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False):
     xRatio = canvas["width"] / img.width 
     yRatio = canvas["height"] / img.height 
     for i in range(len(data['text'])):
-        if data['conf'][i] >= 0:
+        if data['conf'][i] >= 0 and len(data['text'][i].strip()) > 0:
             (x, y, width, height) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
             # Make values relative to the canvas:
             (x, y, width, height) = (math.ceil(int(x)*xRatio), math.ceil(int(y)*yRatio), math.ceil(int(width)*xRatio), math.ceil(int(height)*yRatio))
