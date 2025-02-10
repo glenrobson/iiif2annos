@@ -5,6 +5,7 @@ from pathlib import Path
 from setuptools import setup, find_packages
 
 this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 if os.path.exists("version.txt"):
     VERSION = (this_directory / "version.txt").read_text().strip()
@@ -13,9 +14,9 @@ else:
 
 setup(
     name="iiif2annos",  # Replace with your package name
-    version=VERSION
-    description="A brief description of your package",
-    long_description=open("README.md").read(),
+    version=VERSION,
+    description="OCR a IIIF images in a manifest and generate annotations ",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author="Glen Robson",
     author_email="glen.robson@gmail.com",
