@@ -26,6 +26,9 @@ jobs:
           path: ${{ env.pythonLocation }}
           key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
 
+      - name: Install tesseract
+        run: sudo apt-get install -y tesseract-ocr
+
       - name: Install
         run: pip install --no-cache-dir --upgrade -r requirements.txt
 
