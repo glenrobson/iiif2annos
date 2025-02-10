@@ -1,0 +1,1160 @@
+
+        {
+            "@context": "http://iiif.io/api/presentation/2/context.json",
+            "@id": "http://dams.llgc.org.uk/iiif/newspaper/issue/3036869/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "Aberystwith observer (1858-06-19)", 
+				"navDate":"1858-06-19T00:00:00Z",
+            "metadata": [
+        
+            {
+            "label":[
+            { "@value":"Publisher", "@language": "en"},
+            { "@value":"Cyhoeddwr", "@language": "cy-GB"}
+            ],
+            "value": "David Jenkins"
+            },
+        
+            {
+            "label": "Place of Publication",
+            "value": "Aberystwyth"
+            },
+        
+            {
+            "label":[
+            { "@value":"Frequency", "@language": "en"},
+            { "@value":"Amlder", "@language": "cy-GB"}
+            ],
+            "value": "Weekly"
+            },
+        
+            {
+            "label": "Language",
+            "value": "eng"
+            },
+        
+        
+        {
+        "label": "Subject",
+        "value": [
+        
+            "Aberystwyth (Wales) Newspapers",
+            "Cardiganshire (Wales) Newspapers",
+            "Montgomeryshire (Wales) Newspapers"
+        ]
+        },
+        {
+        "label":[
+        { "@value":"Repository", "@language": "en"},
+        { "@value":"Ystorfa", "@language": "cy-GB"}],
+        "value":[
+        { "@value":"This content has been digitised by The National Library of Wales", "@language": "en"},
+        { "@value":"Digidwyd y cynnwys hwn gan Lyfrgell Gendlaethol Cymru", "@language": "cy-GB"}
+        ]
+        }
+            ],
+            "within": "http://dams.llgc.org.uk/iiif/newspapers/3036868.json",
+				"logo": {
+						"@id": "http://dams.llgc.org.uk/iiif/2.0/image/logo/full/400,/0/default.jpg",
+					"service": {
+						"@context": "http://iiif.io/api/image/2/context.json",
+						"@id": "http://dams.llgc.org.uk/iiif/2.0/image/logo",
+						"profile": "http://iiif.io/api/image/2/level1.json"
+					}
+
+			  },
+				"seeAlso":{
+					"@id":"http://hdl.handle.net/10107/3036869",
+					"format":"application/rdf+xml",
+					"profile":"http://www.europeana.eu/schemas/edm/"
+				},
+            "sequences": [
+            {
+                "@type": "sc:Sequence",
+                "canvases": [
+            
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/canvas/3036870",
+                    "@type":"sc:Canvas",
+                    
+                    "label":"[1]",
+                    "height":8976,
+                    "width":6614,
+                    "images": [
+                    {
+                        "@id":"http://dams.llgc.org.uk/iiif/3036869/annotation/3036870.json",
+                        "@type":"oa:Annotation",
+                        "motivation":"sc:painting",
+                        "resource": {
+                            "@id":"http://dams.llgc.org.uk/iiif/2.0/3036870/image/full/512,/0/default.jpg",
+                            "@type":"dctypes:Image",
+                            "format":"image/jpeg",
+                            "service": {
+                                "@context": "http://iiif.io/api/image/2/context.json",
+                                "@id":"http://dams.llgc.org.uk/iiif/2.0/image/3036870",
+                                "profile":"http://iiif.io/api/image/2/level1.json",
+                                "height":8976,
+                                "width":6614,
+                                "tiles" : [{
+                                    "width": 256,
+                                    "scaleFactors": [ 1, 2, 4, 8, 16, 32, 64 ]
+                                }]
+                            },
+                            "height":8976,
+                            "width":6614
+                        },
+                        "on":"http://dams.llgc.org.uk/iiif/3036869/canvas/3036870"
+                    }],
+                    "otherContent": [
+                        
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART1.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "Advertising",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle1.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART2.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "NOTICES.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle2.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART3.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "ITO OUR READERS.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle3.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART4.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "Advertising",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle4.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART5.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "[No title]",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle5.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART6.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "LIST OF TISITDRS.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle6.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART7.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "AOERYSTWYTH MARKET PRICES,,I.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle7.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART8.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "CORRESPONDENCE.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle8.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036870/annotation/list/ART9.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "[No title]",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle9.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            }
+                    ]
+                },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/canvas/3036871",
+                    "@type":"sc:Canvas",
+                    
+                    "label":"[2]",
+                    "height":8976,
+                    "width":6614,
+                    "images": [
+                    {
+                        "@id":"http://dams.llgc.org.uk/iiif/3036869/annotation/3036871.json",
+                        "@type":"oa:Annotation",
+                        "motivation":"sc:painting",
+                        "resource": {
+                            "@id":"http://dams.llgc.org.uk/iiif/2.0/3036871/image/full/512,/0/default.jpg",
+                            "@type":"dctypes:Image",
+                            "format":"image/jpeg",
+                            "service": {
+                                "@context": "http://iiif.io/api/image/2/context.json",
+                                "@id":"http://dams.llgc.org.uk/iiif/2.0/image/3036871",
+                                "profile":"http://iiif.io/api/image/2/level1.json",
+                                "height":8976,
+                                "width":6614,
+                                "tiles" : [{
+                                    "width": 256,
+                                    "scaleFactors": [ 1, 2, 4, 8, 16, 32, 64 ]
+                                }]
+                            },
+                            "height":8976,
+                            "width":6614
+                        },
+                        "on":"http://dams.llgc.org.uk/iiif/3036869/canvas/3036871"
+                    }],
+                    "otherContent": [
+                        
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART10.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "Q9U! STONIIXRA CARMPKITT.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle10.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART11.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "THE EMPRESS READING THE TELEGRAPHIC NEWS.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle11.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART12.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "ADVENTURES OF A BAG OF MONEY!",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle12.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART13.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "THE MINISTERIAL CRISIS,1",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle13.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART14.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "[No title]",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle14.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART15.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "ANALYSIS OF THE DIVISION.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle15.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART16.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "INCIDENTS OF THE BATTLE OfS MAGENTA Ii",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle16.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART17.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "THE MILAN RAILWAY STATION AFTER THE BATTLE.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle17.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART18.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "|FEATURES OF THE \" REVIVAL\" MOVE|MENT IN IRELAND.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle18.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART19.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "LOUIS NAPOLEON'S ITALIAN POLICY.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle19.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART20.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "HOPE FOR ITALY, AND A CHANCE FOR LORD JOHN!I",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle20.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART21.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "THE \"TE DEUM \"-THE THUNDER-AND THE EMPRESS.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle21.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART22.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "A LEAF FROM A BLUE BOOK.I",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle22.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART23.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "DEATH OF PRINCE METTERNICH.",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle23.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART24.json",
+                                "@type": "sc:AnnotationList",
+                                "label": ".;': A TRIBUTE TO A iERO. - ^ *",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle24.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART25.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "ENGLISH VICTORIES AT A FREMi j d M REGATTA. I J",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle25.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            },
+                            {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036871/annotation/list/ART26.json",
+                                "@type": "sc:AnnotationList",
+                                "label": "[No title]",
+                                "within": 
+                                {
+                                "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle26.json",
+                                    "@type": "sc:Layer",
+                                    "label": "OCR Article Text"
+                                }
+                            }
+                    ]
+                }
+                ]
+            }],
+            "structures":[
+            
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle1",
+                    "@type":"sc:Range",
+                    "label":"Advertising",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "Advertising"
+                        }
+                    ],
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=-84,3615,10068,22560"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle1.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle2",
+                    "@type":"sc:Range",
+                    "label":"NOTICES.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"We shall deem it a favor at all times to receiv short notices of any local occurences in the district. All correspondents must furnish us with their names, not necessarily for publication, but as a",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=9507,3741,3057,969"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle2.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle3",
+                    "@type":"sc:Range",
+                    "label":"ITO OUR READERS.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"MANY have long felt and expressed their ! conviction that a Local Journal is not only :desirable, but also necessary for the town of Aberystwyth and Its neighbourhood; and",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=9498,5757,3225,18420"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle3.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle4",
+                    "@type":"sc:Range",
+                    "label":"Advertising",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "Advertising"
+                        }
+                    ],
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=10017,24390,3153,1248"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle4.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle5",
+                    "@type":"sc:Range",
+                    "label":"[No title]",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"Method— —— ' sT * Meeting^DAY, JUNE 18' y/ /^ great n«¥#er. o^. neighbourinad^pp#\"a^;x \"v- ifjy be",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=12627,3582,6900,22242"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle5.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle6",
+                    "@type":"sc:Range",
+                    "label":"LIST OF TISITDRS.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "Detailed Lists, Results and Guides"
+                        }
+                    ],
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=15873,13734,3612,4881"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle6.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle7",
+                    "@type":"sc:Range",
+                    "label":"AOERYSTWYTH MARKET PRICES,,I.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "Detailed Lists, Results and Guides"
+                        }
+                    ],
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=15852,18708,3138,2298"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle7.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle8",
+                    "@type":"sc:Range",
+                    "label":"CORRESPONDENCE.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"To the Editor of the Al&Tt/stwith Observer. SIR,- In visiting the BWt Market this morning I noticed a quantity of flannel and other clot' in^ hanging up to dry.' This is by no means ae £ ILWBB.",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=15900,21096,3261,1332"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle8.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle9",
+                    "@type":"sc:Range",
+                    "label":"[No title]",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":". > . i, si\" . WflroSjCS 6d~ to 6s. Od. . wtie Rp! t1'\"?t- Bi*rthomol>Wiis. 9d.to3s.iW. s' \" =.-6d.to2^a. If Jones",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036870#xywh=15876,22491,3558,3063"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle9.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle10",
+                    "@type":"sc:Range",
+                    "label":"Q9U! STONIIXRA CARMPKITT.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"We deem It right to state that we do not identify ourselves with our correspondent's opinions,]I The last few days have been days of great political excitement. Just previous to the division on the",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=330,1074,6540,24903"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle10.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle11",
+                    "@type":"sc:Range",
+                    "label":"THE EMPRESS READING THE TELEGRAPHIC NEWS.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"Madame MacMahon is lofty and glorious at her husband's fame (says a French correspondent); Madame Niel deems such fame taken from her husband, and refuses to acknowledge it unless it be restored to",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=3825,3744,3027,4665"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle11.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle12",
+                    "@type":"sc:Range",
+                    "label":"ADVENTURES OF A BAG OF MONEY!",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"A large sum of money, the property of a. respectable trader in the flour business, at the Canal, Limerick (says the Munster Neivs), underwent an extraordinary escape and a variety of adventures a few days ago. It",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=3840,8502,3087,7611"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle12.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle13",
+                    "@type":"sc:Range",
+                    "label":"THE MINISTERIAL CRISIS,1",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The vote of want of confidence carried in the House of Commons on Saturday morning left no choice to the Ministry of Lord Derby, however tenacious of office, except at the earliest possible moment to place their re",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=3849,16263,3084,3417"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle13.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle14",
+                    "@type":"sc:Range",
+                    "label":"[No title]",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The Times has the following remarks on the crisis :— At an early hour on Saturday morning, June 11, the Cabinet assembled, and agreed to place their resignation in the hands of the Queen. This was done, and the fact of the Ministerial",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=3801,1038,6240,24966"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle14.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle15",
+                    "@type":"sc:Range",
+                    "label":"ANALYSIS OF THE DIVISION.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The following is an analysis of the division taken upon the vote of want of confidence :— PRESENT. For 323",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=6990,9060,3012,3114"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle15.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle16",
+                    "@type":"sc:Range",
+                    "label":"INCIDENTS OF THE BATTLE OfS MAGENTA Ii",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"We collect the following ineider. i m of special correspondents and other e Tp'ri Yesterday evening (June 6), not wit' \" ' T succeeded in getting here, to inspect 1",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=6951,1056,6228,24933"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle16.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle17",
+                    "@type":"sc:Range",
+                    "label":"THE MILAN RAILWAY STATION AFTER THE BATTLE.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The Times special correspondent thus describes the scene presented at the Milan Railway Station on the arrival there of the wounded:-This station (Magenta) and the railway train itself",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=10035,7212,3069,7317"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle17.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle18",
+                    "@type":"sc:Range",
+                    "label":"|FEATURES OF THE \" REVIVAL\" MOVE|MENT IN IRELAND.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":".... A correspondent (says the Northern Daily Whig) favours us with the following simple narrative of facts, witnessed by him the other morning in the famous dis",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=10101,14619,3048,5640"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle18.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle19",
+                    "@type":"sc:Range",
+                    "label":"LOUIS NAPOLEON'S ITALIAN POLICY.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The Morning Star, which is worthy of some notice on account of the soundness of its views, has the following remarks on the Emperor's policy :- ° IThe Emperor of the French, in the proclamation",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=10023,1095,6189,24948"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle19.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle20",
+                    "@type":"sc:Range",
+                    "label":"HOPE FOR ITALY, AND A CHANCE FOR LORD JOHN!I",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"Amid the thousand-and-one rumours that have been chasing one another since it fell to Lord Palmerston to reconstruct the Whig Cabinet, one thing alone, as far as we know, is definitively settled (says the Times).",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=13176,1890,3087,5994"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle20.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle21",
+                    "@type":"sc:Range",
+                    "label":"THE \"TE DEUM \"-THE THUNDER-AND THE EMPRESS.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"During the celebration of the victory of Magenta at Paris, last week, the Empress Eugenie went to the\" Cathredral of Notre Dame to return thanks in agrand Te Deurn to the God of Armies for having blessed the soldiers of the French army.",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=13188,8085,3093,5193"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle21.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle22",
+                    "@type":"sc:Range",
+                    "label":"A LEAF FROM A BLUE BOOK.I",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The correspondence on the affairs of Italy mentioned in the Queen's Speech makes a Blue Book of more than 400 pages, and it is perhaps one of the most interesting Blue Books that were ever published. The correspond",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=13221,13431,3069,5082"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle22.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle23",
+                    "@type":"sc:Range",
+                    "label":"DEATH OF PRINCE METTERNICH.",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"The death of Prince Metternich a,t the very time when the sword of a Bonaparte hangs over Italy and the Treaties of Vienna are being weighed in the balance, might in an age of superstition be regarded as a solemn",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=13182,1008,6276,25011"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle23.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle24",
+                    "@type":"sc:Range",
+                    "label":".;': A TRIBUTE TO A iERO. - ^ *",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"General Cler, who has likewise affair It Magenta, was, unlike Espinasse, much belved. by the arr. He was one of the youngest generals if he army, beg born in 1814. Ever since leaving St. Oyiy.ii 1835, he g",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=16311,8481,3195,7740"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle24.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle25",
+                    "@type":"sc:Range",
+                    "label":"ENGLISH VICTORIES AT A FREMi j d M REGATTA. I J",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"^■he annual regatta for rowing matches, given by tlii jurisj U ^■gatta Society, came -off on the Seine, at St. Clourl, otuftk Mil inst. Owing to the great development that has tikettiP t, ■lace here in rowing during the last few years, this regttaf",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=16302,16245,3219,8112"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle25.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    },
+                {
+                    "@id":"http://dams.llgc.org.uk/iiif/3036869/article/modsarticle26",
+                    "@type":"sc:Range",
+                    "label":"[No title]",
+                    "metadata": 
+                    [
+                        {
+                            "label": "Article Category",
+                            "value": "News"
+                        }
+                    ],
+                    
+                        "description":"PopiFAiT hit 1 Derby Minisru t hi Disraeli character! feedl f ^ ® P' (10 been of file,P",
+                    
+                "canvases": [
+                
+                        
+                            "http://dams.llgc.org.uk/iiif/3036869/canvas/3036871#xywh=16350,24453,3174,1782"
+                        
+                ],
+                    "contentLayer": [
+                        {
+                            "@id": "http://dams.llgc.org.uk/iiif/3036869/annotation/layer/modsarticle26.json",
+                            "@type": "sc:Layer",
+                            "label": "OCR Article Text"
+                        }
+                    ]
+                    }
+            ]
+      }      
+    
