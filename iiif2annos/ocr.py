@@ -107,7 +107,7 @@ def save(manifest, annoLists, outputDir):
             filename = os.path.basename(annotations['@id'])    
 
         print (f"Saving {outputDir}/{filename}")
-        with open(f"{outputDir}/{filename}") as f:
+        with open(f"{outputDir}/{filename}", 'w') as f:
             json.dump(annotations, f, indent=4)
 
         canvasNo += 1
