@@ -8,6 +8,7 @@ from pytesseract import Output
 import argparse
 import json
 import math
+import os
 
 def canvases(manifest, sequence=0):
     if 'type' in manifest:
@@ -99,8 +100,14 @@ def save(manifest, annoLists, outputDir):
 
     canvasNo = 0
     for annotations in annoLists:
-        print (f"Saving {outputDir}/{canvasNo}.json")
-        with open(f'{outputDir}/{canvasNo}.json', 'w') as f:
+        filename = ""
+        if 'id' in annotations:
+            filename = os.path.basename(annotations['id'])
+        else:
+            filename = os.path.basename(annotations['@id'])    
+
+        print (f"Saving {outputDir}/{filename}")
+        with open(f"{outputDir}/{filename}") as f:
             json.dump(annotations, f, indent=4)
 
         canvasNo += 1
