@@ -23,11 +23,14 @@ def get_service(canvas):
         return canvas['images'][0]['resource']['service']
      
 
-def buildIIIFImage(service):
-     if '@id' in service:
-        return f"{service['@id']}/full/full/0/default.jpg"
-     else:     
-        return f"{service[0]['id']}/full/max/0/default.jpg"
+def buildIIIFImage(service, region="full"):
+    if '@id' in service:
+        return f"{service['@id']}/{region}/full/0/default.jpg"
+    else:
+        return f"{service[0]['id']}/{region}/max/0/default.jpg"
+
+def _canvas_id(canvas):
+    return canvas.get('id') or canvas.get('@id')
 
 def buildAnno(canvas, ident, x, y, width, height, content):
     if 'id' in canvas:
@@ -113,7 +116,7 @@ def save(manifest, annoLists, outputDir):
         canvasNo += 1
 
 
-def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False):
+def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False, x_offset=0, y_offset=0):
     print ('Running OCR')
     if lang:
         data = pytesseract.image_to_data(img, output_type=Output.DICT, lang=lang)
@@ -121,14 +124,14 @@ def run_ocr(img, canvas, anno_uri, canvasNo, lang=None, confidence=False):
         data = pytesseract.image_to_data(img, output_type=Output.DICT)
     annos = []
     annoNo = 0
-    # Incase the downloaded image is a different size to the one in the canvas 
-    xRatio = canvas["width"] / img.width 
-    yRatio = canvas["height"] / img.height 
+    # Incase the downloaded image is a different size to the one in the canvas
+    xRatio = canvas["width"] / img.width
+    yRatio = canvas["height"] / img.height
     for i in range(len(data['text'])):
         if data['conf'][i] >= 0 and len(data['text'][i].strip()) > 0:
             (x, y, width, height) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
-            # Make values relative to the canvas:
-            (x, y, width, height) = (math.ceil(int(x)*xRatio), math.ceil(int(y)*yRatio), math.ceil(int(width)*xRatio), math.ceil(int(height)*yRatio))
+            # Make values relative to the canvas, then apply region offset:
+            (x, y, width, height) = (math.ceil(int(x)*xRatio) + x_offset, math.ceil(int(y)*yRatio) + y_offset, math.ceil(int(width)*xRatio), math.ceil(int(height)*yRatio))
             ident = f"{anno_uri}/{canvasNo}/annotation/{annoNo}"
             if confidence:
                 content = f"Confidence: {data['conf'][i]}: {data['text'][i]}"
@@ -149,6 +152,30 @@ class OCR:
 
         # Include confidence in output?     
         self.confidence = confidence    
+
+    def ocr_region(self, manifest, canvas_id, region):
+        canvasNo = 1
+        for canvas in canvases(manifest):
+            if _canvas_id(canvas) == canvas_id:
+                break
+            canvasNo += 1
+        
+        rx, ry, rw, rh = [int(v) for v in region.split(",")]
+
+        service = get_service(canvas)
+        url = buildIIIFImage(service, region=f"{rx},{ry},{rw},{rh}")
+        print(f'Downloading {url}')
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+
+        # Use region dimensions for ratio calc so run_ocr scales correctly against the cropped image
+        region_canvas = dict(canvas)
+        region_canvas["width"] = rw
+        region_canvas["height"] = rh
+
+        return run_ocr(img, region_canvas, self.base, canvasNo,
+                       lang=self.lang, confidence=self.confidence,
+                       x_offset=rx, y_offset=ry)
 
     def ocr(self, manifest):
         anno_uri = self.base
