@@ -92,6 +92,9 @@ def addAnnotations(canvas, ident):
             }
         ]  
 
+def get_languages():
+    return pytesseract.get_languages(config='')
+
 def downloadManifest(manifestURI):
     # Data is either a string or parsed JSON
     print (f'Loading: {manifestURI}')
@@ -206,12 +209,20 @@ if __name__ == "__main__":
                     prog='ocr.py',
                     description='Read a manifest, OCR all the pages then adds the results as annotation lists')
 
-    parser.add_argument('manifest', help="URL to Manifest file")
-    parser.add_argument('output', help='Output directory for annotation lists')
+    parser.add_argument('--list-langs', dest='list_langs', action='store_true', default=False, help='List available Tesseract languages and exit')
+    parser.add_argument('manifest', nargs='?', help="URL to Manifest file")
+    parser.add_argument('output', nargs='?', help='Output directory for annotation lists')
     parser.add_argument('--base-output-uri', dest='outputURI', default='http://localhost/annos', help='Output URI for annotations')                
     parser.add_argument('--lang', dest='lang', default=None, help='Language to pass to the OCR engine see: https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html')                
     parser.add_argument('-c', '--confidence', dest='confidence', action='store_true', default=False, help='Include OCR confidence value in text of the annotation? ')
     args = parser.parse_args()
+
+    if args.list_langs:
+        print('\n'.join(get_languages()))
+        exit(0)
+
+    if not args.manifest or not args.output:
+        parser.error("manifest and output are required unless --list-langs is used")
 
     processor = OCR(args.outputURI, args.lang, args.confidence)
 
